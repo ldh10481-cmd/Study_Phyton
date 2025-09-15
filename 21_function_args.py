@@ -8,10 +8,10 @@ print(plus()) # plus() missing 1 required positional argument: 'num'
 
 # 인자값의 종류를 튜플(수정이 불가능한 List 형태)로만 받겠다.
 def tuple_args(*numbers):
-print(numbers)
+    print(numbers)
     total = 0
     for num in numbers:
         total += num
     return total
 
-print(tuple_args(*numbers: 1,2,3,4,5))
+print(tuple_args(1,2,3,4,5))
