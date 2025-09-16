@@ -5,7 +5,7 @@ try:
     pass
 except IOError:
     pass
-except Keyboardinterrupt:
+except KeyboardInterrupt:
     pass
 except ValueError:
     pass
@@ -13,5 +13,5 @@ except ValueError:
 # 2. 어떤 예외가 발생하던지 동일한 처리를 하고 싶을때
 try:
     pass
-except Exception:
-    pass
+except Exception as e: # 예외의 최상위 부모이기 때문에 다른 자식 예외들이 모두 들어올 수 있다.
+    traceback.print_exc()
