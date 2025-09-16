@@ -20,3 +20,8 @@ class Person(Jumper, Runner): # Jumper와 Runer 를 상속 받았다.
 p = Person()
 p.walk()
 
+# 상속받은 함수들을 내것처럼(p객체로부터) 사용한다.
+p.jump()
+p.high_jump()
+p.run()
+p.sprint()
