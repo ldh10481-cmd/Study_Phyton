@@ -19,4 +19,5 @@ class Car:
             print('시동이 이미 걸려있습니다.')
 
     def change(self):
-        pass
+        print(f'{self.gear} 단으로 변속 했습니다.')
+        self.gear += gear
